@@ -1,12 +1,11 @@
 @isTest
 private class ArraysTest {
-	
-	@isTest static void test_method_one() {
-		// Implement test code
+
+	@isTest static void testIsList() {
+		String[] arr = new List<String>{'value1', 'value2'};
+		System.assert(Arrays.isList(arr), 'Expected a list of strings to be a list');
+
+		System.assert(Arrays.isList(new Account()), 'Expected an Account to not be a list');
 	}
-	
-	@isTest static void test_method_two() {
-		// Implement test code
-	}
-	
+
 }
