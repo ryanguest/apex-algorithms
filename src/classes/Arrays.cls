@@ -1,7 +1,10 @@
 public class Arrays {
 
-    public static Boolean isList(Object input){
-    	Object test;
+   /**
+    * Return true if the passed in Object is of type List (or Array)
+    */
+   public static Boolean isList(Object input){
+      Object test;
     	try {
          test = (List<Object>)input;
        	return true;
