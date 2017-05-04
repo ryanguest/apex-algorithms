@@ -5,13 +5,13 @@ public class Arrays {
     */
    public static Boolean isList(Object input) {
       Object test;
-    	try {
+      try {
          test = (List<Object>)input;
-       	return true;
-    	}
+         return true;
+      }
         catch(System.TypeException ex){}
         return false;
-	}
+   }
 
    /**
     * Flattens an array of arrays into one "flat" collection.
